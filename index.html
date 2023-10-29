@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{       
+            margin: 0;
+        }
+.photo{ 
+    position: relative;
+   background-color: aqua;
+   width: 100%;
+   height: 175vw;
+   overflow: hidden
+}
+#img-drg{
+   position: relative;
+   height: 100%;
+   width:450vw;
+right: 1310px;
+}
+.butt{
+    display: flex;
+justify-content:center;
+}
+.butt > button{
+    width: 20%;
+}
+.dr{
+    position: fixed;
+text-align: center;
+   display: block;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+  right: 0;
+  top: 8%;
+  width: 12%;
+  border: 1px;
+  border-color: black;
+}
+.dr h5{
+    padding-bottom: 9px;
+    
+    justify-content: center;
+    align-items: center;
+  
+
+}
+    </style>
+</head>
+<body> 
+    <div class="butt">
+        <button onclick=" pensem()">الخميس</button>
+        <button onclick="carsem()">الاربعاء</button> 
+        <button onclick="sesem()">الثلاثاء</button> 
+        <button onclick="dusem()">الاثنين</button>   
+        <button onclick="yeksem()">الاحد</button>      
+    </div>
+     
+    <div class="dr">
+     <h5>10/5 ك</h5> 
+     <h5>10/4 ك</h5> 
+     <h5>11 ع ك</h5>
+     <h5>11 د ك</h5>  
+     <h5>12 ع ك</h5> 
+     <h5>12 د ك</h5> 
+     <h5>10/1</h5> 
+     <h5>10/2</h5> 
+     <h5>11 ع ع</h5> 
+     <h5>11 د ع</h5> 
+     <h5>12 ع ع</h5> 
+     <h5>12 د ع</h5> 
+     <h5>10/3</h5> 
+    
+      
+    </div>
+        <div class="photo">
+     <img src="ref.png" id="img-drg">           
+        </div>  
+        <script>
+            const roj = document.getElementById("img-drg");
+            function dusem(){
+                roj.style.right="981px"
+            }
+            function sesem(){
+                roj.style.right="652px"
+            }
+            function yeksem(){
+                roj.style.right="1310px"
+            }
+            function carsem(){
+                roj.style.right="327px"
+            }
+            function pensem(){
+                roj.style.right="0px"
+            }
+        </script> 
+</body>
+</html>
